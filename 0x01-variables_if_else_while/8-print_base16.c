@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	char f;
+	char k;
 
 	int j;
 
-	f = 'a';
+	k = 'a';
 	j = 0;
 	while
 		(j < 10) {
@@ -18,9 +18,9 @@ int main(void)
 			j++;
 		}
 	while
-		(f <= 'f') {
-			putchar(f);
-			f++
+		(k <= 'f') {
+			putchar(k);
+			k++;
 		}
 	putchar('\n');
 	return (0);
