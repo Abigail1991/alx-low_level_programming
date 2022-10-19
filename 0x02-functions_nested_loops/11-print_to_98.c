@@ -1,4 +1,4 @@
-#inclide "main.h"
+#include "main.h"
 
 /**
  * print_to_98 - print all n atural numbers n to 98
