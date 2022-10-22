@@ -6,7 +6,7 @@
  * 3 print fizz
  * 5 print buzz
  * 3 and 5 print fizzbuzz
- * Return: Always 0
+ * Return: Always
  */
 int main(void)
 {
