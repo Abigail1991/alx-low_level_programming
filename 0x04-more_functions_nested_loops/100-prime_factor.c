@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 /**
- * main - print the largest prime number
- * @c: char
+ * main - print the largest prime factor
  * Return: Always 0
  */
 int main(void)
