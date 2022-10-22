@@ -1,26 +1,23 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 /**
  * main - print the largest prime number
+ * @c: char
  * Return: Always 0
  */
 int main(void)
 {
-	long prime = 612852475143, div;
+	long num = 612852475143;
+	int c;
 
-	while (div < (prime / 2))
+	for (c = (int) sqrt(num); c > 2; c++)
 	{
-	if ((prime % 2) == 0)
-	{
-	prime /= 2;
-	continue;
-	}
-	for (div = 3; div < (prime / c); div += 2)
-	{
-	if ((prime % div) == 0
-			prime /= div;
+		if (num % c == 0)
+		{
+			printf("%d\n", c);
+			break;
 		}
 	}
-	printf("%ld\n" prime);
 	return (0);
 }
