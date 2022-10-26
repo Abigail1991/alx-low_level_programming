@@ -9,9 +9,17 @@
  */
 int _atoi(char *s)
 {
-	char *s;
-	int x = atoi(s)
+	int x = 1;
+	unsigned int num = 0;
 
-		printf("converting s ; %d\n", x)
-		return (0);
+	{
+	if (*s == ' -')
+		x *= -1;
+	else if (*s >= '0' && *s <= '9')
+		num = (num * 10) + (*s - '0');
+	else if (num > 0)
+		break;
+	}
+	while (*s++);
+	return (num * x);
 }
