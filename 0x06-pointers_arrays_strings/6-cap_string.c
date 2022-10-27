@@ -21,7 +21,7 @@ char *cap_string(char *str)
 		str[b - 1] == '?' ||
 		str[b - 1] == '"' ||
 		str[b - 1] == '(' ||
-		str[b - 1] == ")" ||
+		str[b - 1] == ')' ||
 		str[b - 1] == '{' ||
 		str[b - 1] == '}' ||
 		str[b - 1] == '\t' ||
