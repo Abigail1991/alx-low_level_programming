@@ -13,8 +13,8 @@ int main(int argc, char *argv[])
 
 	if (argc > 0)
 	{
-		while (cnt < argc)
-		{
+	while (cnt < argc)
+	{
 	printf("%s\n", argv[cnt]);
 	cnt++;
 		}
