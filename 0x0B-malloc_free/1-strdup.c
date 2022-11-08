@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 #include <stdlib.h>
-#include <stdio.h>
+#include <math.h>
 
 /**
  * _strlen - count array
@@ -46,13 +46,13 @@ char *_strcpy(char *dest, char *src)
 */
 char *_strdup(char *str)
 {
-	char *abc;
+	char *dst;
 	unsigned int size;
 
-	if (abc == 0)
+	if (dst == 0)
 	{
 	return (NULL);
 	}
-	_strcpy(abc, str);
-	return (abc);
+	_strcpy(dst, str);
+	return (dst);
 }
