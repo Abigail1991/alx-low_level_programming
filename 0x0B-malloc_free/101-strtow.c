@@ -2,6 +2,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
 int word_len(char *str);
 int count_words(char *str);
@@ -64,12 +65,12 @@ char **strtow(char *str)
 	if (words == 0)
 		return (NULL);
 
-	for (w = 0; w < words; w++)
+	for (; w < words; w++)
 	{
 		while (str[index] == ' ')
 			index++;
 		letters = word_len(str + index);
-		**strings[w] = malloc(sizeof(char) * (letters + 1));
+		strings[w] = malloc(sizeof(char) * (letters + 1));
 
 		if (strings[w] == NULL)
 		{
