@@ -5,7 +5,7 @@
 /**
  * get_op_func - same operator from main
  * @s: op str
- * Return: NULL
+ * Return: 0
  */
 int (*get_op_func(char *s))(int, int)
 {

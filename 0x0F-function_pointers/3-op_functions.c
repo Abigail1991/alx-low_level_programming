@@ -36,6 +36,17 @@ int op_mul(int a, int b)
 }
 
 /**
+ * po_div - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
+ */
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+
+/**
  * op_mod - 5 functions
  * @a: input one
  * @b: input two
