@@ -36,7 +36,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * po_div - 5 functions
+ * op_div - 5 functions
  * @a: input one
  * @b: input two
  * Return: 0
