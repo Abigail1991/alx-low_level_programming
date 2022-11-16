@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - get_op_func operators
+ * main - operators
  * func signs and funcs from op_func
  * if op is null, return Error & exit 99
  * if not 4 arguments, return Error & exit 98
@@ -11,6 +11,7 @@
  * run calc, input one, operator, input two = pointer res to get_op
  * @argv: double pointer to arguments
  * @argc: arguments
+ * get_op_func: function
  * Return: 0
  */
 int main(int argc, char *argv[])
