@@ -6,7 +6,7 @@
  * print_numbers - a function that prints numbers
  * @separator: a string to be printed
  * @n: number of integers passed on
- * Return: always 0
+ * Return: void 
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
