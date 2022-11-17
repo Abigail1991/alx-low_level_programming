@@ -3,14 +3,15 @@
 
 /**
  * array_range  - creates an array of integers
- * @array_range: array
  * @min: minimum
  * @max: maximum
- * Return : NULL or 0
+ * Return: pointer
  */
 int *array_range(int min, int max)
 {
 	int *arr, i = 0, t = min;
+
+	arra_range = 0;
 
 	if (min > max)
 		return (0);
