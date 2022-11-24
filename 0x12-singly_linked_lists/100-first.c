@@ -1,10 +1,9 @@
-#include "lists.h"
-
+#include <stdio.h>
 void _attribute_((constructor)) tortoise(void);
 
 /**
  * tortoise - prints a string before main function
- * Return: void
+ * 
  */
 void tortoise(void)
 {
