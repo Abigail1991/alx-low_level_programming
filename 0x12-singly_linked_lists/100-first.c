@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void _attribute_((constructor)) bmain(void);
+void bmain(void)__attribute__((constructor));
 /**
  * bmain - prints a string before main function
  * Return: no return
