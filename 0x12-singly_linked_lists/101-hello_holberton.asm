@@ -1,20 +1,22 @@
 extern printf
-global _start
 
 section .text
+global main
 
-_start:
+main:
+
+push rbp
+
 mov rax, 0
 mov rdi, fmt
 mov rsi, msg
-mov rdx, msglen
-syscall
+call printf
+
+pop rbp
 
 mov rax, 0
-mov rdi, 0
-syscall
 
-section .rodata
+section .data
 msg: db "Hello, Holberton",
  0
 fmt: db "%s", 10, 0
