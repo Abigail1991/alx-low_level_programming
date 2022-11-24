@@ -1,18 +1,20 @@
+extern printf
 global _start
 
 section .text
 
 _start:
-mov rax, 1
-mov rdi, 1
+mov rax, 0
+mov rdi, fmt
 mov rsi, msg
 mov rdx, msglen
 syscall
 
-mov rax, 60
+mov rax, 0
 mov rdi, 0
 syscall
 
 section .rodata
-msg: db "Hello, Holberton", 10
-msglen: equ $ - msg
+msg: db "Hello, Holberton",
+ 0
+fmt: db "%s", 10, 0
