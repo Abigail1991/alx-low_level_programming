@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * print_listint - a function that prints all elements of listint_t
@@ -13,7 +14,7 @@ size_t print_listint(const listint_t *h)
 	{
 		nodes++;
 		printf("%d\n", h->n);
-		h - h->next;
+		h = h->next;
 	}
 	return (nodes);
 }
